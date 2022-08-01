@@ -1,0 +1,17 @@
+En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+Variables= Son NOMBRES que son DECLARADOS y que van a CONTENER información que pueden ser de DIVERSOS TIPOS como es: STRING, NUMÉRICA
+            BOOLEANA, o NULL
+
+Strings = Es un TIPO de variable de cadena, esta se le asigna informacion entre corchetes ("") para que sea identificada como string o cadena
+
+
+Funciones (argumentos, return) = Son pequeños "programas" que sirver para DEVOLVER un valor o valores desde el punto del programa
+                                donde fue invocada
+
+Declaraciones if = es una evaluación, donde el resultado SI SE CUMPLE retorne TRUE o bien, se ejecute una serie de instrcciones
+                   si no se cumple, esta el ELSE donde el valor de la evaluación fue FALSE, entonce se ejecuta estas acciones
+                   
+Valores booleanos (true, false) = son variables que tienen 2 valores, verdadero o falso, esto es si se cumplen o no los requerimientos,
+                                  tambíen se le conoce altiguamente como "banderas" que permitian activarse o no para ejecutar una serie
+                                  de instrucciones

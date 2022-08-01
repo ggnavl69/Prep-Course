@@ -1,0 +1,18 @@
+FOR es utilizado para reaizar bucles finitos, se utiliza una variable que se va incre
+mentrando hasta quecumplen una condicion.
+
+&& esta esa la condicion AND, se utiliza para compara 2 condiciones de la siguiente manera
+  true and true= true
+  true and false= false
+  false and false = false
+  false and false= false
+
+|| La  condicion OR se comparan dos sentencias, si una se cumple el resultado es tru:
+true OR false = true
+true OR true = true
+false OR True = true
+false OR false =false
+
+! la condicion NOT es para negar una expresion_
+!== es negar la condicion verdadera
+!

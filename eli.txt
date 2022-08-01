@@ -1,0 +1,11 @@
+ if (x>y){
+       return x;
+    else if (x==y){
+       return y;
+       }
+     }return y;
+}	
+
+____2_ cociente
+ 5|13
+    3 reciduo
