@@ -1,5 +1,7 @@
 // No cambies los nombres de las funciones.
 
+const { arrayReplaceAt } = require("markdown-it/lib/common/utils");
+
 function obtenerMayor(x, y) {
   // "x" e "y" son números enteros (int).
   // Devuelve el número más grande
@@ -75,7 +77,7 @@ function estaEnRango(numero) {
 }
 
 function esEntero(numero) {
-  // Devuelve "true" si "numero" es un entero (int/integer)
+  // Devuelve "true" si "numero" es un entero (int  /integer)
   // Ejemplo: 0.8 -> false
   // Ejemplo: 1 -> true
   // Ejemplo: -10 -> true
@@ -92,10 +94,13 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
-   if ((numero%3)==0 && (numero%5)==0) {return 'fizzbuzz';}
-  else if ((numero%3)==0) {return "fizz";}
-  else if ((numero%5)==0) {return "buzz";}
-  else return numero;
+  if ((numero%3)===0 && numero%5 ===0)
+   {return "fizzbuzz";}
+   else if ((numero%3)=== 0 )
+   {return "fizz";}
+   else if (numero%5===0)
+    {return 'buzz';}
+   else return numero;
 }
 
 function operadoresLogicos(num1, num2, num3) {
@@ -105,11 +110,16 @@ function operadoresLogicos(num1, num2, num3) {
   //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
-  if ((num1>num2) && (num1>num3) && num1>0) {return "Número 1 es mayor y positivo";}
-  else if ( num1<0 && num2<0 && num3<0) {return "Hay negativos";}
+  //if (num1>num2 && num1>num3 && num1>0) {return "Número 1 es mayor y positivo";}
+  //else if ( num1<0 || num2<0 || num3<0) {return "Hay negativos";}
+  //else if (num3>num1 && num3>num2) {return num3+1;}
+  //else if(num1===0 || num2===0 || num3===0) {return "Error";}
+  // return false;
+  if ( num1<0 || num2<0 || num3<0) {return "Hay negativos";}
+  else if(num1===0 || num2===0 || num3===0) {return "Error";}
+  if (num1>num2 && num1>num3 && num1>0) {return "Número 1 es mayor y positivo";}
   else if (num3>num1 && num3>num2) {return num3+1;}
-  else if(num1==0 || num2==0 || num3==0) {return "Error";}
-  return false;
+  else return false;
 }
 
 function esPrimo(numero) {
@@ -118,20 +128,23 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
-  //if (numero>1)
-  //  {for (var i=2; i<=numero;i++) 
-  //    {if ((numero%2)==0)
-  //    }
-  //  }
-  //  return "falso";
+  //Esprimo=true;
+  if (numero===0 || numero==1) 
+     {return false;}
+    for (var i=2; i<=numero;i++) 
+    {  if (numero%1 === 0 && numero%i === 0){
+        Esprimo=true;}
+      else Esprimo=false;
+    }
+  return Esprimo;
+    
 }
-
 function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
-  if (valor==true || valor==false) {return "Soy verdadero";}
-  else if ((valor ==true) && valor==false) {return "Soy falso";}
+  if (valor==true) {return "Soy verdadero";}
+  else {return "Soy falso";}
 
 }
 
@@ -139,15 +152,20 @@ function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí
-    for (var i=0; i<=6;i++)
-     {return i+ ' X 6 ='+ i*6;}
+  var array=[];
+    for (var i=0; i<=10;i++)
+     {array.push(i*6); 
+     }
+     return array;
 }
 
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  if (Math.ceil(numero)>99) {return true;}
-   return false; 
+  
+  if ((String.length(numero.toString())) === 3) 
+  {return true;}
+  else return false; 
 }
 
 function doWhile(numero) {

@@ -1,0 +1,5 @@
+if (arguments[i]==null) 
+      {return 0;}
+    else if (isNaN(arguments[i])==false)
+          {Resultado=Resultado*arguments[i];}
+    else return arguments;

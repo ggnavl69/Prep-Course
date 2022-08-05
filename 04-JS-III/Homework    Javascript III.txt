@@ -1,0 +1,4 @@
+ARRAY es una almacenamiento de informacion de diferente tipo, su subindice inicia desde el cero
+       para acceder a su información, te debes de posicionar en el número que
+       corrresponde con el subindice ARREGLO[3]
+
